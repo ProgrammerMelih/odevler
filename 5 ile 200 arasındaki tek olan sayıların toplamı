@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {   
+            // 5 ile 200 arasındaki tek sayıları toplayıp ekrana basan program.
+            int toplam = 0;
+            for (int i = 5; i < 200; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    Console.WriteLine(i + " Tek Sayı");
+                    toplam = toplam + i;
+                }
+            } 
+            Console.WriteLine("Toplamı = " + toplam);
+            Console.WriteLine("Kadir Hoca Adamdır");
+            Console.ReadKey();
+        }
+        
+    }
+}
